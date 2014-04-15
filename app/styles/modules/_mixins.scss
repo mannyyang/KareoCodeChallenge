@@ -1,4 +1,4 @@
-@mixin linearGradient($top, $bottom){
+@mixin linearGradient($top, $bottom) {
     background: $top; /* Old browsers */
     background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
@@ -9,12 +9,36 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
-@mixin hide-text{
+@mixin box-shadow($top, $left, $blur, $color, $inset:"false") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin hide-text {
     overflow: hidden;
     text-indent: -9000px;
     display: block;
 }
 
-@mixin text-shadow($opacity){
+@mixin text-shadow($opacity) {
     text-shadow: 1px -1px rgba(0, 0, 0, $opacity);
+}
+
+@mixin absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
 }
