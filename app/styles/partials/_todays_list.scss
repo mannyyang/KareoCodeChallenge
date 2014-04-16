@@ -1,0 +1,54 @@
+.todays-list {
+
+	.panel-header {
+		span {
+			font-size: 24px;
+			font-weight: $regular;
+		}
+		.total {
+			margin-left: 10px;
+			font-weight: $light;
+			font-size: 18px;
+			color: $dark-grey;
+		}
+	}
+
+	.panel-body {
+		.title {
+			display: block;
+			margin-bottom: 15px;
+			color: grey;
+		}
+
+		ul li {
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		ul li div.action-items {
+			display: inline-block;
+			margin-top: 10px;
+		}
+			ul li div.action-items a {
+				margin-right: 20px;
+				color: $very-light-blue;
+				text-decoration: none;
+			}
+
+			ul li div .item{
+				padding-top: 5px;
+				font-size: 18px;
+				font-weight: $regular;
+			}
+
+			ul li div .badge {
+				padding-top: 5px;
+				text-align: center;
+				color: $dark-grey;
+				@include circle(30px, $grey);
+			}
+
+	}
+	
+}

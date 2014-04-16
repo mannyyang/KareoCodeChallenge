@@ -1,0 +1,133 @@
+.patient-list {
+
+	.patient {
+		min-height: 80px;
+		padding: 15px 15px;
+		margin-bottom: 10px;
+	}
+	
+	.focused {
+		@extend .patient;
+		background-color: #9e8c8c;
+	}
+
+	.patient-info {
+		width: 75%;
+		padding-left: 50px;
+
+		.name {
+			display: block;
+			font-size: 20px;
+			font-weight: $regular;
+		}
+	}
+
+	.patient-status {
+		width: 20%;
+		margin-right: 10px;
+		text-align: center;
+
+		.person {
+			padding: 10px 10px;
+			color: white;
+			@include rounded(5px);
+		}
+
+		.sent {
+			@extend .person;
+			background-color: $sent-background;
+		}
+
+		.confirmed {
+			@extend .person;
+			background-color: $confirmed-background;
+		}
+
+		.reminder {
+			display: block;
+			margin-top: 3px;
+		}
+	}
+
+	.patient-details {
+		margin-top: 60px;
+
+		.contact {
+			margin-top: 25px;
+		}
+
+			.contact span {
+				margin-right: 15px;
+			}
+
+		.state {
+			margin: 30px 0 15px 0;
+		}
+
+		.state .breadcrumbs {
+			width: 70%;
+		}
+
+		.state .dropdown-menu {
+			width: 23%;
+		}
+
+		.details {
+			padding: 15px 15px;
+			margin-top: 25px;
+			background-color: white;
+			@include rounded(5px);
+		}
+
+			.details .title {
+				display: block;
+				color: $very-light-blue;
+			}
+
+			.details table {
+				width: 100%;
+				margin-top: 20px;
+			}
+
+				.details table > tr {
+					width: 100%;
+					min-height: 25px;
+					margin-bottom: 10px;
+				}
+
+				.details table td {
+					padding: 10px 0;
+				}
+
+					.details table td > span{
+						margin-right: 20px;
+					}
+
+					.details table td > p{
+						margin-top: 10px;
+					}
+
+						.details table td > p > span{
+							display: block;
+							margin-bottom: 5px;
+						}
+
+			.details .type {
+				width: 15%;
+			}
+
+			.details .desc {
+				width: 75%;
+			}
+
+	}
+
+	i.fa {
+		color: $very-light-blue;
+	}
+
+	i.fa.green {
+		font-size: 20px;
+		color: $green;
+	}
+}

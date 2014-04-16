@@ -13,7 +13,7 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
@@ -34,19 +34,241 @@
             <span class="right"><i class="fa fa-clock-o"></i>Recent Charts</span>
         </section>
         
-        <main class="dashboard">
-            <section class="nav-container">
-                <h1>
+        <main class="dashboard container">
+            <section class="nav container">
+                <h1 class="left">
                     Dashboard
                 </h1>
                 <nav>
                     <ul>
-                        <li>Today's <div class="button-dropdown">items<i class="fa fa-caret-down"></i></div></li>
-                        <li></li>
-                        <li></li>
+                        <li><span>Today's</span> <div class="button-dropdown">items<i class="fa fa-caret-down"></i></div></li>
+                        <li><span>for</span><div class="button-dropdown">items<i class="fa fa-caret-down"></i></div></li>
+                        <li><span>at</span><div class="button-dropdown">items<i class="fa fa-caret-down"></i></div></li>
                     </ul>
                 </nav>
             </section>
+            <section class="row">
+                <article>
+                    <div class="panel-header row">
+                        <div class="status left selected">
+                            <span class="number">21</span>
+                            <span class="title">Upcoming</span>
+                        </div>
+                        <div class="status left">
+                            <span class="number">4</span>
+                            <span class="title">In Office</span>
+                        </div>
+                        <div class="status left">
+                            <span class="number">3</span>
+                            <span class="title">Finished</span>
+                        </div>
+                    </div>
+                    <div class="panel-body row">
+                        <ul class="patient-list">
+                            <li class="patient">
+                                <div class="patient-info left">
+                                    <span class="name">Carlton James Pembroke</span>
+                                    <span class="details">24 y/o - Sick Visit with Sabrina Martin, MD at 10:15am</span>
+                                </div>
+                                <div class="patient-status right">
+                                    <div class="person sent">Person 1</div>
+                                    <span class="reminder">Reminder Sent</span>
+                                </div>
+                            </li>
+                            <li class="patient">
+                                <div class="patient-info left">
+                                    <span class="name">Richard Lemon</span>
+                                    <span class="details">32 y/o - Well Check with Kensington Livingston, MD at 10:30am</span>
+                                </div>
+                                <div class="patient-status right">
+                                    <div class="person confirmed">Person 2</div>
+                                    <span class="reminder">Confirmed</span>
+                                </div>
+                            </li>
+                            <li class="patient focused">
+                                <div class="patient-info left">
+                                    <span class="name">Cindy Jones</span>
+                                    <span class="details">28 y/o - Well Check with Sabrina Martin, MD at 10:30am</span>
+                                </div>
+                                <div class="patient-status right">
+                                    <div class="person confirmed">Person 3</div>
+                                </div>
+                                <div class="patient-details">
+                                    <hr />
+                                    <div class="contact row">
+                                        <span><i class="fa fa-phone-square"></i>(888) 292-9056</span>
+                                        <span><i class="fa fa-envelope-o"></i>carlton@gmail.com</span>
+                                        <span><i class="fa fa-home"></i>1652 Wycliff, Irvine, CA 92602</span>
+                                    </div>
+                                    <div class="state row">
+                                        <ul class="breadcrumbs left">
+                                            <li class="step current">State 1</li>
+                                            <li>&#10142;</li>
+                                            <li class="step">State 2</li>
+                                            <li>&#10142;</li>
+                                            <li class="step">State 3</li>
+                                        </ul>
+                                        <ul class="dropdown-menu right">
+                                            <li><span class="options">More Options</span>
+                                                <ul>
+                                                    <li>option 1</li>
+                                                    <li>option 2</li>
+                                                    <li>
+                                                        <span>suboptions -></span>
+                                                        <ul>
+                                                            <li>sub 1</li>
+                                                            <li>sub 2</li>
+                                                            <li>sub 3</li>
+                                                            <li>sub 4</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>option 4</li>
+                                                    <li>option last</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="details row">
+                                        <span class="title">
+                                            <i class="fa fa-user"></i>details
+                                        </span>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>medicine</span>
+                                                    </td>
+                                                    <td class="desc">
+                                                        <span class="green">Advil</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>section</span>
+                                                    </td>
+                                                    <td class="desc">
+                                                        <span><i class="fa fa-check-circle green"></i>liked</span>
+                                                        <span class="link">link 1</span>
+                                                        <span class="link">link 2</span>
+                                                        <p>
+                                                            <span>title one long</span>
+                                                            <span>cost: $10.00</span>
+                                                            <span>visit: 02/12/2014 <em class="grey">(1 day ago)</em></span>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>cost 1</span>
+                                                    </td>
+                                                    <td class="desc">
+                                                        <span class="red">$20.00</span>
+                                                        <span class="link">Collect payment -></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>time 1</span>
+                                                    </td>
+                                                    <td class="desc">
+                                                        <span>06/30/2014 @ 10:00AM</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>Outstanding</span>
+                                                    </td>
+                                                    <td class="desc">
+                                                        <span>-</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <span>Other Alerts</span>
+                                                    </td>
+                                                    <td class="desc">
+                                                        <span>-</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <aside class="outstanding-list">
+                    <div class="panel-header">
+                        <span>Outstanding Items</span>
+                    </div>
+                    <div class="panel-body row">
+                        <span class="title">Patient Items</span>
+                        <ul>
+                            <li>
+                                <span class="item left">item 1</span><div class="badge right">3</div>
+                            </li>
+                            <li>
+                                <span class="item left">item 2</span><div class="badge right">3</div>
+                            </li>
+                            <li>
+                                <span class="item left">item 3</span><div class="badge right">3</div>
+                            </li>
+                        </ul>
+                        <span class="title">Clinical Items</span>
+                        <ul>
+                            <li>
+                                <span class="item left">item 1</span><div class="badge right">3</div>
+                            </li>
+                            <li>
+                                <span class="item left">item 2</span><div class="badge right">3</div>
+                            </li>
+                            <li>
+                                <span class="item left">item 3</span><div class="badge right">3</div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <aside class="todays-list">
+                    <div class="panel-header">
+                        <span>Today's List</span>
+                        <span class="total">(28 total)</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>
+                                <div>
+                                    <span class="item left">Kareo Kensington</span><div class="badge left">3</div>
+                                </div>
+                                <div class="action-items">
+                                    <a href="">View Agenda</a>
+                                    <a href="">Print Agenda</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="item left">Roger Templeton</span><div class="badge left">3</div>
+                                </div>
+                                <div class="action-items">
+                                    <a href="">View Agenda</a>
+                                    <a href="">Print Agenda</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="item left">Lysol Jones</span><div class="badge left">3</div>
+                                </div>
+                                <div class="action-items">
+                                    <a href="">View Agenda</a>
+                                    <a href="">Print Agenda</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </section>
+            
         </main>
 
 </body>

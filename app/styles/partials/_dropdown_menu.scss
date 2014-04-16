@@ -1,0 +1,75 @@
+ul.dropdown-menu {
+	position: relative;
+
+	.options {
+		padding: 10px;
+		border: 1px solid black;
+	}
+
+	ul {
+		display: none;
+		position: relative;
+		left: -60px;
+		background-color: white;
+		border: 1px solid $grey;
+		@include rounded(3px);
+		@include box-shadow(0px, 0px, 7px, 0px, rgba(0, 0, 0, 0.35));
+	}
+
+	ul li {
+		width: 225px;
+		padding: 15px 10px;
+		color: $green;
+		text-align: left;
+		
+		ul {
+			position: relative;
+			top: 70px;
+			left: 200px;
+		}
+
+		ul:after, .arrow_box:before {
+			right: 100%;
+			top: 26%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		ul:after {
+			border-color: rgba(0, 0, 0, 0);
+			border-right-color: white;
+			border-width: 15px;
+			margin-top: -15px;
+		}
+		ul:before {
+			border-color: rgba(0, 0, 0, 0);
+			border-right-color: lightgrey;
+			border-width: 16px;
+			margin-top: -16px;
+		}
+
+		&:hover {
+			color: white;
+			background-color: $very-light-blue;
+		}
+	}
+
+	li:hover > ul {
+		display: block;
+		position: absolute;
+		z-index: 1;
+	}
+
+}
+
+ul.dropdown-menu > li{
+	text-align: right;
+}
+
+ul.dropdown-menu > li > ul > li:last-child {
+	border-top: 1px solid lightgrey;
+}

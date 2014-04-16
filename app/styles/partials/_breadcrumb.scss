@@ -1,0 +1,33 @@
+ul.breadcrumbs {
+
+	li {
+		display: inline;
+		margin-right: 5px;
+	}
+
+	li.step {
+		padding: 2px 8px;
+		font-size: 14px;
+		color: $dark-grey;
+		background-color: $grey;
+		@include rounded(25px);
+	}
+
+	.step.current {
+		@extend li.step;
+
+		padding: 3px 15px 5px 15px;
+		font-size: 16px;
+		color: white;
+
+	  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.35);
+	  -moz-box-shadow:    inset 0px 1px 1px 0px rgba(255, 255, 255, 0.35);
+	  box-shadow:         inset 0px 1px 1px 0px rgba(255, 255, 255, 0.35);
+
+	  border: 1px solid $dark-blue;
+
+		@include linearGradient($very-light-blue, $dark-blue);
+		@include text-shadow(0.25);
+		
+	}
+}

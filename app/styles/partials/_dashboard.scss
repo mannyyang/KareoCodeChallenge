@@ -1,3 +1,43 @@
 main.dashboard {
+	width: $container-width;
+	@include margin-center;
+
+	.nav.container {
+		height: 50px;
+		margin: 25px 0;
+		
+		nav {
+			padding: 10px 0;
+		}
+
+		nav ul li {
+			float: left;
+		}
+		nav ul li span{
+			float: left;
+		}
+		nav ul li .button-dropdown {
+			float: right;
+			margin: 0 10px;
+		}
+	}
+
+	article {
+		padding-top: 0 !important;
+		padding-left: 0 !important;
+		
+
+		@include unit(two-thirds);
+
+	}
+
+	aside {
+		padding-top: 0 !important;
+		padding-right: 0 !important;
+		
+
+		@include unit(third);
+
+	}
 
 }

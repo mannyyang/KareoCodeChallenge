@@ -4,6 +4,21 @@
 // Modules and Variables
 @import "partials/base";
 
+// Button styles
+@import "partials/buttons";
+
+// Breadcrumb Styles
+@import "partials/breadcrumb";
+
+// Dropdown Menu Styles
+@import "partials/dropdown_menu";
+
+// Status Styles
+@import "partials/status";
+
+// Panel Styles
+@import "partials/panel";
+
 // Header Styles
 @import "partials/header";
 
@@ -12,3 +27,13 @@
 
 // Dashboard Styles
 @import "partials/dashboard";
+
+// Patient List Styles
+@import "partials/patient_list";
+
+// Outstanding List Styles
+@import "partials/outstanding_list";
+
+// Todays List Styles
+@import "partials/todays_list";
+

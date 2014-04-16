@@ -1,0 +1,25 @@
+.status {
+	width: 32% !important;
+	padding: 5px 0;
+	color: $green;
+	@include rounded(5px);
+
+	span {
+		display: block;
+		text-align: center;
+	}
+
+	span.number {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	&:last-child {
+		margin-right: 0 !important;
+	}
+}
+
+.selected {
+	@extend .status;
+	background-color: $status-background;
+}

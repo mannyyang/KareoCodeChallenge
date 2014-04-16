@@ -1,0 +1,13 @@
+.button-dropdown {
+  @include button($grey, $black);
+
+  padding: 2px 6px 3px 10px;
+  border: 1px solid black;
+  font-size: 12px;
+  font-weight: $light;
+  -webkit-box-shadow: inset 0px 2px 10px 0px rgba(142, 2, 2, 0.5);
+  -moz-box-shadow:    inset 0px 2px 10px 0px rgba(142, 2, 2, 0.5);
+  box-shadow:         inset 0px 2px 10px 0px rgba(142, 2, 2, 0.5);
+  @include linearGradient($grey, $grey);
+  @include rounded(20px);
+}
